@@ -1,4 +1,4 @@
--- name: Only Up 64 Beta 1
+-- name: Only Up 64 v1.0
 -- description: Only Up 64 is a romhack created by Kaze and thelegendofzenia\n\nhttps://romhacking.com/hack/only-up-64\n\nThis whole mod is one big, tall level that takes around 25 minutes to complete - if you don't fall. Climb the biggest level ever made! (as of today)\n\nPorted to coop by DizzyThermal and Cooliokid956\n\nSpecial thanks to everyone else on the sm64ex-coop Discord who helped with testing and debugging!
 -- incompatible: romhack
 
@@ -16,7 +16,7 @@ camera_set_use_course_specific_settings(false)
 
 smlua_text_utils_dialog_replace(0, 1, 4, 30, 200, "----------------------\
        Welcome to\
-    Only Up 64 Beta 1\
+       Only Up 64\
 ----------------------\
 Known issues:\
 > Texture bugs are\
