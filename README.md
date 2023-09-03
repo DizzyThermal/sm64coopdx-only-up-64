@@ -34,4 +34,6 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 * Ported to coop by [DizzyThermal](https://discord.gg/HbQMp8zzba) and **Cooliokid956**
 
+* Music: [MusicByAI - Only Up 64 OST: AI-Generated Chill Lofi Vibes](https://www.youtube.com/watch?v=bdoHcW4n6-k)
+
 * Special thanks to everyone else on the sm64ex-coop Discord who helped with testing and debugging!
