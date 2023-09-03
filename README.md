@@ -4,11 +4,13 @@
 
 ## About
 
-Only Up 64 is a romhack created by [Kaze](https://romhacking.com/user/Kaze) and [thelegendofzenia](https://romhacking.com/user/thelegendofzeina): [Only Up 64 ROM Hack](https://romhacking.com/hack/only-up-64)
+[Only Up 64](https://romhacking.com/hack/only-up-64) is a romhack created by [Kaze](https://romhacking.com/user/Kaze) and [thelegendofzenia](https://romhacking.com/user/thelegendofzeina)
 
-## Mod Description:
+## Mod Description
 
 This whole mod is one big, tall level that takes around 25 minutes to complete - if you don't fall. Climb the biggest level ever made! (as of today)
+
+You can use the GP dive and the GP spin to have an easier time in this game but difficult mode is doing it without them!
 
 ## Only Up 64 Plugin
 
