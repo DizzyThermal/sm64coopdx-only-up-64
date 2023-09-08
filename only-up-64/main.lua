@@ -1,8 +1,9 @@
--- name: Only Up 64 v1.0
+-- name: Only Up 64 v1.1
 -- description: Only Up 64 is a romhack created by Kaze and thelegendofzenia\n\nhttps://romhacking.com/hack/only-up-64\n\nThis whole mod is one big, tall level that takes around 25 minutes to complete - if you don't fall. Climb the biggest level ever made! (as of today)\n\nPorted to coop by DizzyThermal and Cooliokid956\n\nSpecial thanks to everyone else on the sm64ex-coop Discord who helped with testing and debugging!
 -- incompatible: romhack
 
 LEVEL_ONLY_UP_64 = level_register('level_only_up_64_entry', COURSE_NONE, 'ONLY UP 64', 'ou64', 28000, 0x28, 0x28, 0x28)
+LEVEL_ONLY_UP_64_ENDING = level_register('level_only_up_64_ending_entry', COURSE_NONE, 'ONLY UP 64 ENDING', 'ou64e', 28000, 0x28, 0x28, 0x28)
 
 gLevelValues.entryLevel = LEVEL_ONLY_UP_64
 gLevelValues.fixCollisionBugs = true
@@ -12,7 +13,10 @@ gLevelValues.floorLowerLimitMisc = -0x8000
 gLevelValues.floorLowerLimitShadow = -0x8000
 
 gServerSettings.skipIntro = 1
+
 camera_set_use_course_specific_settings(false)
+
+smlua_text_utils_castle_secret_stars_replace("       To The Top!")
 
 smlua_text_utils_dialog_replace(0, 1, 4, 30, 200, "----------------------\
        Welcome to\
@@ -27,13 +31,20 @@ Please report new issues\
 to DizzyThermal\n\
 Thanks and enjoy climbing!")
 
-warp_to_level(LEVEL_ONLY_UP_64, 1, 0)
+smlua_text_utils_dialog_replace(8, 1, 5, 30, 200, "----------------------\
+    Congratulations!\n\
+ you did it! proud of u!\
+----------------------\
+\n To go back to the start\
+   stand in the corner\
+   >>>>>>>>>>>>")
 
 -- Play Only Up 64 Background Music
 bgm = audio_stream_load("only-up-64.ogg")
 audio_stream_set_looping(bgm, true)
 audio_stream_play(bgm, true, 5)
 
+local save_file = get_current_save_file_num() - 1
 local prev_area = 1
 local areas = {
     -- Area 2 --
@@ -78,7 +89,6 @@ local areas = {
 
     -- Area 6 --
 	{ area = 6, warpY = -18532, marioY = -16000, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
-
     -- Rhino -- START
     { area = 6, warpY = -15893, marioY = -15450, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
     { area = 6, warpY = -15916, marioY = -15450, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
@@ -94,10 +104,8 @@ local areas = {
     { area = 6, warpY = -16304, marioY = -15450, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
 
     -- Area 7 --
-	{ area = 7, warpY = -17373,  marioY = -16000, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
-    { area = 7, warpY = -17229,  marioY = -16000, warpType = SURFACE_INSTANT_WARP_1D, defaultType = SURFACE_DEFAULT  },
-
-    -- Tower / Cliff -- START
+	{ area = 7, warpY = -17358,  marioY = -16000, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
+    -- Tower -- START
     { area = 7, warpY = -16053,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
     { area = 7, warpY = -16054,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
     { area = 7, warpY = -16055,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
@@ -111,7 +119,16 @@ local areas = {
     { area = 7, warpY = -16379,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
     { area = 7, warpY = -16382,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
     { area = 7, warpY = -16945,  marioY = -15700, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
+
+    -- Area 0 --
+	{ area = 0, warpY = -22777,  marioY = -16400, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT  },
 }
+
+-- Warp to LEVEL_ONLY_UP_64
+function warp_to_start()
+    warp_to_level(LEVEL_ONLY_UP_64, 1, 0)
+end
+warp_to_start()
 
 function mario_update(m)
     -- Disable Fall Damage
@@ -123,8 +140,8 @@ function mario_update(m)
     end
 
     -- Keep Players in Level
-    if gNetworkPlayers[0].currLevelNum ~= LEVEL_ONLY_UP_64 then
-        warp_to_level(LEVEL_ONLY_UP_64, 1, 0)
+    if gNetworkPlayers[0].currLevelNum ~= LEVEL_ONLY_UP_64 and gNetworkPlayers[0].currLevelNum ~= LEVEL_ONLY_UP_64_ENDING then
+        warp_to_start()
     end
 end
 
@@ -144,10 +161,6 @@ function warp_check(m)
     end
 end
 
-function on_death()
-    warp_to_level(LEVEL_ONLY_UP_64, 1, 0)
-end
-
 hook_event(HOOK_BEFORE_PHYS_STEP, warp_check)
 hook_event(HOOK_MARIO_UPDATE, mario_update)
-hook_event(HOOK_ON_DEATH, on_death)
+hook_event(HOOK_ON_DEATH, warp_to_start)
