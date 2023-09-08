@@ -26,6 +26,7 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 ## Known Issues
 
+* Star warp is broken to end room
 * Texture bugs on some of the models
 * Warps can rotate camera for non-free camera
 * Android users cannot hear the background music (Android Port needs BassAudio compiled and linked)
