@@ -33,7 +33,7 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 ## Only Up 64 Blender File
 
-This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64ex-coop: [Only Up 64 Blender File](https://drive.google.com/file/d/1A5W_s9UPfxcyhweleA9rDSuS1NszZZzn/view?usp=sharing)
+This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64ex-coop: [Only Up 64 Blender File](https://drive.google.com/file/d/1HwkKZUt4oKTeL2xbSHvtkonCkJgxZ94j/view)
 
 ## Credits
 
