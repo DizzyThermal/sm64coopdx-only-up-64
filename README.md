@@ -16,6 +16,10 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 * You'll probably want the companion plugin: [Only Up 64 Plugin (sm64ex-coop)](https://github.com/DizzyThermal/sm64ex-coop-only-up-64-plugin)
 
+## Flood Mod
+
+* [Flood Mod Support for Only Up 64](https://github.com/DizzyThermal/sm64ex-coop-only-up-64-flood)
+
 #### Features
 
 * Visible Character Height on HUD and Playerlist
@@ -26,7 +30,6 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 ## Known Issues
 
-* Star warp is broken to end room
 * Texture bugs on some of the models
 * Warps can rotate camera for non-free camera
 * Android users cannot hear the background music (Android Port needs BassAudio compiled and linked)
@@ -34,6 +37,11 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 ## Only Up 64 Blender File
 
 This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64ex-coop: [Only Up 64 Blender File](https://drive.google.com/file/d/1HwkKZUt4oKTeL2xbSHvtkonCkJgxZ94j/view)
+
+## Changes
+
+* Added Flood Mod Support
+* Added Star at the top to warp to End room (not the same end room as Only Up 64 ROM Hack)
 
 ## Credits
 
