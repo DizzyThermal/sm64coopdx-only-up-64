@@ -37,14 +37,12 @@ local function bhv_collect_star_loop(obj)
     spawn_star_number();
 end
 
-local function frame_check()
+hook_behavior(id_bhvStar, OBJ_LIST_LEVEL, true, bhv_collect_star_init, bhv_collect_star_loop, "bhvStar")
+hook_event(HOOK_UPDATE, function()
     delay_counter = delay_counter + 1
     if delaying and delay_counter >= delay_count then
         delaying = false
         delay_counter = 0
         warp_to_level(LEVEL_ONLY_UP_64_ENDING, 1, 0)
     end
-end
-
-hook_behavior(id_bhvStar, OBJ_LIST_LEVEL, true, bhv_collect_star_init, bhv_collect_star_loop, "bhvStar")
-hook_event(HOOK_UPDATE, frame_check)
+end)
