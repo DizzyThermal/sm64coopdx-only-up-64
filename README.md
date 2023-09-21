@@ -26,7 +26,11 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 * Ground Pound Twirl (Z, A)
 * Ground Pound Jump (Z, A on ground)
 * Ground Pound Dive (Z, B)
-* Warp System from Alpha Testing
+* Warp System
+
+## Chat Commands
+
+> `/only-up-music` - Toggle Only Up 64 Music
 
 ## Known Issues
 
@@ -40,6 +44,8 @@ This wouldn't be possible without Kaze releasing the Blender file for the map. H
 
 ## Changes
 
+* Added Music Toggle
+* Added Warps to Blender Map for Warp Menu Support
 * Added Flood Mod Support
 * Added Star at the top to warp to End room (not the same end room as Only Up 64 ROM Hack)
 
