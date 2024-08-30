@@ -1,4 +1,4 @@
-# Only Up 64 (sm64ex-coop)
+# Only Up 64 (sm64coopdx)
 
 [![Only Up 64](https://img.youtube.com/vi/si8lXj90Cdk/0.jpg)](https://www.youtube.com/watch?v=si8lXj90Cdk)
 
@@ -14,11 +14,11 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 ## Only Up 64 Plugin
 
-* You'll probably want the companion plugin: [Only Up 64 Plugin (sm64ex-coop)](https://github.com/DizzyThermal/sm64ex-coop-only-up-64-plugin)
+* You'll probably want the companion plugin: [Only Up 64 Plugin (sm64coopdx)](https://github.com/DizzyThermal/sm64coopdx-only-up-64-plugin)
 
 ## Flood Mod
 
-* [Flood Mod Support for Only Up 64](https://github.com/DizzyThermal/sm64ex-coop-only-up-64-flood)
+* [Flood Mod Support for Only Up 64](https://github.com/DizzyThermal/sm64coopdx-only-up-64-flood)
 
 #### Features
 
@@ -40,7 +40,7 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 ## Only Up 64 Blender File
 
-This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64ex-coop: [Only Up 64 Blender File](https://drive.google.com/file/d/1PRjuysbOzZa5if1Z0gtNwF1o1D6IrDIq/view)
+This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64coopdx: [Only Up 64 Blender File](https://drive.google.com/file/d/1PRjuysbOzZa5if1Z0gtNwF1o1D6IrDIq/view)
 
 ## Changes
 
@@ -51,8 +51,8 @@ This wouldn't be possible without Kaze releasing the Blender file for the map. H
 
 ## Credits
 
-* Ported to coop by [DizzyThermal](https://discord.gg/HbQMp8zzba) and **Cooliokid956**
+* Ported to sm64coopdx by [DizzyThermal](https://discord.gg/HbQMp8zzba) and **Cooliokid956**
 
 * Music: [MusicByAI - Only Up 64 OST: AI-Generated Chill Lofi Vibes](https://www.youtube.com/watch?v=bdoHcW4n6-k)
 
-* Special thanks to everyone else on the sm64ex-coop Discord who helped with testing and debugging!
+* Special thanks to everyone else on the sm64coopdx Discord who helped with testing and debugging!
