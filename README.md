@@ -44,6 +44,7 @@ This wouldn't be possible without Kaze releasing the Blender file for the map. H
 
 ## Changes
 
+* Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64!)
 * Added Music Toggle
 * Added Warps to Blender Map for Warp Menu Support
 * Added Flood Mod Support
@@ -51,8 +52,11 @@ This wouldn't be possible without Kaze releasing the Blender file for the map. H
 
 ## Credits
 
-* Ported to sm64coopdx by [DizzyThermal](https://discord.gg/HbQMp8zzba) and **Cooliokid956**
+* [Kaze](https://romhacking.com/user/Kaze) and [thelegendofzenia](https://romhacking.com/user/thelegendofzeina)
+  for creating the original ROM Hack and giving permission to port the ROM hack and use the custom Mario model.
 
-* Music: [MusicByAI - Only Up 64 OST: AI-Generated Chill Lofi Vibes](https://www.youtube.com/watch?v=bdoHcW4n6-k)
+* Ported to sm64coopdx by **DizzyThermal** and **Cooliokid956**.
 
-* Special thanks to everyone else on the sm64coopdx Discord who helped with testing and debugging!
+* Music: [MusicByAI - Only Up 64 OST: AI-Generated Chill Lofi Vibes](https://www.youtube.com/watch?v=bdoHcW4n6-k).
+
+* Special thanks to everyone else on the sm64ex-coop / sm64coopdx Discord who helped with testing and debugging!
