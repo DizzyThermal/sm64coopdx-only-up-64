@@ -48,7 +48,7 @@ The mario model i provided was taken from me asking Kaze for it to use it, the m
 
 ## Changes
 
-* Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64!)
+* Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64![Originally known as ThePerfectMario64])
 * Added Music Toggle
 * Added Warps to Blender File for Warp Menu Support
 * Added Flood Mod Support
