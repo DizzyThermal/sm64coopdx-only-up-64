@@ -42,11 +42,15 @@ You can use the GP dive and the GP spin to have an easier time in this game but 
 
 This wouldn't be possible without Kaze releasing the Blender file for the map. Here is my modified one for sm64coopdx: [Only Up 64 Blender File](https://drive.google.com/file/d/1PRjuysbOzZa5if1Z0gtNwF1o1D6IrDIq/view)
 
+## Only Up 64 Mario Blender File
+The mario model i provided was taken from me asking Kaze for it to use it, the model wouldn't be possible without him, And i used some post processing to make the textures work correctly ask me for them if you want to edit it yourself. Here is my modified mario model for sm64coopdx: [Only Up 64 Mario Blender File](https://drive.google.com/file/d/1nY9krLISbnVK8o5EYZ_5Mwvq_zeATFBU/view?usp=sharing) 
+# WARNING: DO NOT USE BLENDER 3.0 OR LOWER TO RUN NOR USE FAST64 COOP, PLEASE UPDATE TO NEWEST BLENDER AND [FAST64](https://github.com/Fast-64/fast64/archive/refs/heads/main.zip)
+
 ## Changes
 
-* Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64!)
+* Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64![Originally known as ThePerfectMario64])
 * Added Music Toggle
-* Added Warps to Blender Map for Warp Menu Support
+* Added Warps to Blender File for Warp Menu Support
 * Added Flood Mod Support
 * Added Star at the top to warp to End room (not the same end room as Only Up 64 ROM Hack)
 
