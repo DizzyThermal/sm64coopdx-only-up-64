@@ -50,7 +50,7 @@ The mario model i provided was taken from me asking Kaze for it to use it, the m
 
 * Added Mario model from Only Up 64 ROM Hack (thanks SonicTheHedgeHog64!)
 * Added Music Toggle
-* Added Warps to Blender Map for Warp Menu Support
+* Added Warps to Blender File for Warp Menu Support
 * Added Flood Mod Support
 * Added Star at the top to warp to End room (not the same end room as Only Up 64 ROM Hack)
 
