@@ -1,6 +1,7 @@
 # Only Up 64 (sm64coopdx)
 
 [![Only Up 64](https://img.youtube.com/vi/si8lXj90Cdk/0.jpg)](https://www.youtube.com/watch?v=si8lXj90Cdk)
+[![Only Up 64 Co-op](https://github.com/user-attachments/assets/e67c309e-6d51-4b0d-ac93-27922faf47fd)]
 
 ## About
 
