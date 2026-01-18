@@ -49,10 +49,11 @@ This wouldn't be possible without Kaze releasing the Blender file for the map. H
 * Thank you SonicTheHedgeHog64 (originally known as ThePerfectMario64) for post-processing the textures to work correctly.
 * [Modified Mario Blender model for sm64coopdx](https://drive.google.com/file/d/1nY9krLISbnVK8o5EYZ_5Mwvq_zeATFBU/view?usp=sharing) - provided by: SonicTheHedgeHog64 (originally known as ThePerfectMario64)
 
-* **WARNING**: MUST USE BLENDER 3.1+ AND THE LATEST FAST64 (NOT FAST64 COOP!) - [latest fast64](https://github.com/Fast-64/fast64/archive/refs/heads/main.zip)
+* **WARNING**: MUST USE BLENDER 3.1+ AND THE LATEST FAST64 GART (NOT FAST64 COOP!) - [latest fast64 gart](https://github.com/ManIsCat2/Fast64-Gart/archive/refs/heads/main.zip)
 
 ## Changes
 
+* Removed Extra vert's on cap, And re-did emblem
 * Added Mario model from Only Up 64 ROM Hack - Thanks SonicTheHedgeHog64 (originally known as ThePerfectMario64)
 * Added Music Toggle
 * Added Warps to Blender Map File for Warp Menu Support

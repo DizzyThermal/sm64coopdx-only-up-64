@@ -1,4 +1,4 @@
--- name: Only Up 64 v1.3.2
+-- name: Only Up 64 v1.3.3
 -- description: Only Up 64 is a romhack created by Kaze and thelegendofzenia\n\nhttps://romhacking.com/hack/only-up-64\n\nThis whole mod is one big, tall level that takes around 25 minutes to complete - if you don't fall. Climb the biggest level ever made! (as of today)\n\nPorted to sm64coopdx by DizzyThermal and Cooliokid956 and Sunk\n\nSpecial thanks to everyone else on the sm64coopdx Discord who helped with testing and debugging!
 -- incompatible: romhack
 
