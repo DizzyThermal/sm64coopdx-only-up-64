@@ -116,7 +116,7 @@ hook_event(HOOK_ON_PAUSE_EXIT, function()
 end)
 
 -- Music --
-hook_chat_command('only-up-music', '- Toggle Only Up 64 Music', function()
+hook_chat_command('ou64-music', '- Toggles \\#FAFF20\\Only Up 64\\#FFF\\ Soundtrack', function()
     _G.ou64_enable_music = not _G.ou64_enable_music
     if _G.ou64_enable_music then
         djui_popup_create("Only Up 64: \n\\#00C7FF\\Music Enabled", 1)
