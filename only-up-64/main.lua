@@ -45,38 +45,7 @@ hook_event(HOOK_MARIO_UPDATE, function(m)
     if is_player and not in_level then
         warp_to_start()
     end
-
---    _G.ou64_lakitu_pos = {
---        x = gLakituState.pos.x,
---        y = gLakituState.pos.y,
---        z = gLakituState.pos.z,
---        hspeed = gLakituState.posHSpeed,
---        vspeed = gLakituState.posVSpeed,
---    }
---    _G.ou64_lakitu_focus = {
---        x = gLakituState.focus.x,
---        y = gLakituState.focus.y,
---        z = gLakituState.focus.z,
---        hspeed = gLakituState.focHSpeed,
---        vspeed = gLakituState.focVSpeed,
---    }
---    _G.ou64_lakitu_yaw = gLakituState.yaw
 end)
-
---hook_event(HOOK_ON_INSTANT_WARP, function()
---    djui_chat_message_create("WARP")
---    gLakituState.pos.x = _G.ou64_lakitu_pos.x
---    gLakituState.pos.y = _G.ou64_lakitu_pos.y
---    gLakituState.pos.z = _G.ou64_lakitu_pos.z
---    gLakituState.posHSpeed = _G.ou64_lakitu_pos.hspeed
---    gLakituState.posVSpeed = _G.ou64_lakitu_pos.vspeed
---    gLakituState.focus.x = _G.ou64_lakitu_focus.x
---    gLakituState.focus.y = _G.ou64_lakitu_focus.y
---    gLakituState.focus.z = _G.ou64_lakitu_focus.z
---    gLakituState.focHSpeed = _G.ou64_lakitu_focus.hspeed
---    gLakituState.focVSpeed = _G.ou64_lakitu_focus.vspeed
---    gLakituState.yaw = _G.ou64_lakitu_yaw
---end)
 
 hook_event(HOOK_ON_HUD_RENDER, function()
     m = gMarioStates[0]
