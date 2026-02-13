@@ -1,9 +1,3 @@
-local delaying = false
-local delay_counter = 0
-local delay_count = 20
-
-local LEVEL_ONLY_UP_64_ENDING = 0x33
-
 ---@param obj Object
 local function bhv_collect_star_init(obj)
     obj.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
@@ -29,20 +23,15 @@ local function bhv_collect_star_loop(obj)
     obj.oFaceAngleYaw = obj.oFaceAngleYaw + 0x800
 
     if obj.oInteractStatus & INT_STATUS_INTERACTED ~= 0 then
-        obj_mark_for_deletion(obj)
+        if not _G.ou64_plugin_active and
+                not _G.ou64_flood_active then
+            warp_to_level(_G.ou64_end_level_id, 1, _G.ou64_act_id)
+        end
         obj.oInteractStatus = 0
-        delaying = true
-        delay_counter = 0
     end
     spawn_star_number();
 end
 
-hook_behavior(id_bhvStar, OBJ_LIST_LEVEL, true, bhv_collect_star_init, bhv_collect_star_loop, "bhvStar")
-hook_event(HOOK_UPDATE, function()
-    delay_counter = delay_counter + 1
-    if delaying and delay_counter >= delay_count then
-        delaying = false
-        delay_counter = 0
-        warp_to_level(LEVEL_ONLY_UP_64_ENDING, 1, 0)
-    end
-end)
+if not _G.ou64_flood_active then
+    hook_behavior(id_bhvStar, OBJ_LIST_LEVEL, true, bhv_collect_star_init, bhv_collect_star_loop, "bhvStar")
+end
