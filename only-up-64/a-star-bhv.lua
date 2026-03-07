@@ -23,8 +23,8 @@ local function bhv_collect_star_loop(obj)
     obj.oFaceAngleYaw = obj.oFaceAngleYaw + 0x800
 
     if obj.oInteractStatus & INT_STATUS_INTERACTED ~= 0 then
-        if not _G.ou64_plugin_active and
-                not _G.ou64_flood_active then
+        if not ou64_plugin_active and
+                not ou64_flood_active then
             warp_to_level(_G.ou64_end_level_id, 1, _G.ou64_act_id)
         end
         obj.oInteractStatus = 0
@@ -32,6 +32,6 @@ local function bhv_collect_star_loop(obj)
     spawn_star_number();
 end
 
-if not _G.ou64_flood_active then
+if not ou64_flood_active then
     hook_behavior(id_bhvStar, OBJ_LIST_LEVEL, true, bhv_collect_star_init, bhv_collect_star_loop, "bhvStar")
 end

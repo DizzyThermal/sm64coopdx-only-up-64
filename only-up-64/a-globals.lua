@@ -1,6 +1,12 @@
+-- Only Up 64 Level IDs
 _G.ou64_level_id = level_register('level_only_up_64_entry', LEVEL_CASTLE_GROUNDS, '      ONLY UP 64', 'ou64', 28000, 0x28, 0x28, 0x28)
-_G.ou64_end_level_id = level_register('level_only_up_64_ending_entry', LEVEL_CASTLE_COURTYARD, ' ONLY UP 64 ENDING', 'ou64e', 28000, 0x28, 0x28, 0x28)
+_G.ou64_end_level_id = level_register('level_only_up_64_ending_entry', LEVEL_CASTLE_GROUNDS, ' ONLY UP 64 ENDING', 'ou64e', 28000, 0x28, 0x28, 0x28)
 _G.ou64_act_id = 0
+
+-- Only Up 64 Music
+_G.ou64_enable_music = true
+ou64_background_music = audio_stream_load("only-up-64.ogg")
+ou64_music_volume = 3
 
 -- Functions
 function mod_active(mod_name)
@@ -17,10 +23,27 @@ function warp_to_start()
     warp_to_level(_G.ou64_level_id, 1, _G.ou64_act_id)
 end
 
+-- Only Up 64 API (External Functions)
+local function play_music()
+    audio_stream_set_looping(ou64_background_music, true)
+    audio_stream_play(ou64_background_music, true, ou64_music_volume)
+end
+
+local function stop_music()
+    audio_stream_set_looping(ou64_background_music, false)
+    audio_stream_stop(ou64_background_music)
+end
+
+_G.ou64_api = {
+    ou64_warp_to_start = warp_to_start,
+    ou64_play_music = play_music,
+    ou64_stop_music = stop_music,
+}
+
 -- Active Mods
-_G.ou64_active = true
-_G.ou64_flood_active = _G.ou64_flood_active ~= nil or mod_active("Only Up 64 Flood")
-_G.ou64_plugin_active = _G.ou64_plugin_active ~= nil mod_active("Only Up 64 Plugin")
+ou64_active = true
+ou64_flood_active = _G.ou64_flood_active ~= nil or mod_active("Only Up 64 Flood")
+ou64_plugin_active = _G.ou64_plugin_active ~= nil mod_active("Only Up 64 Plugin")
 
 -- Level / Server Settings
 gLevelValues.entryLevel = _G.ou64_level_id
@@ -38,16 +61,9 @@ gServerSettings.stayInLevelAfterStar = 2
 camera_set_romhack_override(RCO_ALL_EXCEPT_BOWSER)
 camera_set_use_course_specific_settings(false)
 
--- Only Up 64 Music
-_G.ou64_enable_music = true
-_G.ou64_background_music = audio_stream_load("only-up-64.ogg")
-_G.ou64_music_volume = 3
-audio_stream_set_looping(_G.ou64_background_music, true)
-audio_stream_play(_G.ou64_background_music, true, 5)
-
 -- Areas
-_G.ou64_prev_area = 1
-_G.ou64_areas = {
+ou64_prev_area = 1
+ou64_areas = {
     -- Area 2 --
 	{ area = 2, warpY = -20194, marioY = -15400, warpType = SURFACE_INSTANT_WARP_1B, defaultType = SURFACE_DEFAULT },
     -- Star -- START
